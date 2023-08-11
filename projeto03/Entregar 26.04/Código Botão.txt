@@ -1,0 +1,22 @@
+ private void btn_pesquisar_Click(object sender, EventArgs e)
+        {
+          Cliente cliente = new Cliente();
+            cliente.Id = Int32.Parse(text_id.Text);
+
+            if (Cliente.pesquisar(cliente)) {
+
+                lbl_info.Text += "\n" + cliente.Nome;
+                lbl_info.Text += "\n" + cliente.Email;
+                lbl_info.Text += "\n" + cliente.Idade;
+
+                lbl_info.ForeColor = Color.Green;
+
+            }
+            else
+            {
+                lbl_info.Text = "\n" + "Cliente não Encontrado!";
+                lbl_info.ForeColor = Color.Red;
+            }
+            text_id.Focus();
+
+        }

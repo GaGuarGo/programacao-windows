@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace atividadeBD
+{
+    public partial class FrmPrincipal : Form
+    {
+        public FrmPrincipal()
+        {
+            InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+
+
+
+        private void itemSair_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Você está Saindo do Sistema!");
+            Application.Exit();
+        }
+
+        private void itemFuncionarioCadastrar_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<FrmCadastrarFuncionario>().Count() > 0)
+            {
+                Application.OpenForms.OfType<FrmCadastrarFuncionario>().First().Focus();
+            }
+            else
+            {
+                FrmCadastrarFuncionario frm = new FrmCadastrarFuncionario();
+                frm.Show();
+            }
+
+        }
+
+        private void itemFuncionarioListar_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<FrmListarFuncionario>().Count() > 0)
+            {
+                Application.OpenForms.OfType<FrmListarFuncionario>().First().Focus();
+            }
+            else
+            {
+                FrmListarFuncionario frm = new FrmListarFuncionario();
+                frm.Show();
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+ private void btn_cadastrar_Click(object sender, EventArgs e)
+        {
+
+            Fornecedor fornecedor = new Fornecedor();
+            fornecedor.RazaoSocial = razaoSocial_textBox.Text;
+            fornecedor.Email = email_textBox.Text;
+            fornecedor.Cnpj = cnpj_textBox.Text;
+
+            Fornecedor.salvarForncedor(fornecedor);
+
+            MessageBox.Show("Fornecedor Cadastrado!");
+
+        }

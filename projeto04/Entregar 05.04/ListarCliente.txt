@@ -1,0 +1,29 @@
+using atividadeBD.Class;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace atividadeBD
+{
+    public partial class FrmListarCliente : Form
+    {
+        public FrmListarCliente()
+        {
+            InitializeComponent();
+        }
+
+        private void btn_pesquisar_Click(object sender, EventArgs e)
+        {
+            lbl_info.Text = Cliente.listar(text_id.Text.ToString());
+        }
+    }
+}
+
+
+// Eu criei um form separado para fazer a consulta e mostrar os dados

@@ -1,0 +1,19 @@
+     private void btn_cadastrar_Click(object sender, EventArgs e)
+        {
+            Fornecedor fornecedor = new Fornecedor();
+            fornecedor.RazaoSocial = razaoSocial_textBox.Text;
+            fornecedor.Email = email_textBox.Text;
+            fornecedor.Cnpj = cnpj_textBox.Text;
+
+
+
+            MessageBox.Show(Fornecedor.salvarForncedor(fornecedor));
+        }
+
+
+  private void btn_pesquisar_Click(object sender, EventArgs e)
+        {
+
+            lbl_info.Text = Fornecedor.listarFornedor(id: text_id.Text.ToString());
+
+        }

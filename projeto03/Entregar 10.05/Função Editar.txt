@@ -1,0 +1,24 @@
+ public static string editar(Cliente cli)
+        {
+
+            try
+            {
+
+                MySqlConnection conn = Conexao.obterConexao();
+                string sql = "UPDATE funcionario SET nome = @nome WHERE id = @id";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@id", cli.id);
+                cmd.Parameters.AddWithValue("@nome", cli.nome);
+                cmd.ExecuteNonQuery();
+
+                return "Editado com Sucesso!";
+
+            }
+            catch (MySqlException e)
+            {
+
+                return "Erro: " + e.Message;
+
+            }
+
+        }

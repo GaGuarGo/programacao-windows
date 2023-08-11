@@ -1,0 +1,30 @@
+/// CÓDIGO BTN_SALVAR do FrmCadastrarProduto:
+
+ private void btn_cadastrar_Click(object sender, EventArgs e)
+        {
+
+            Produto p = new Produto();
+            p.Nome = text_nome.Text;
+            p.Estoque = text_estoque.Text.ToString();
+
+            MessageBox.Show(Produto.cadastrarProduto(p));
+
+            clear();
+        }
+
+/// CÓDIGO LISTAR DA CLASSE PRODUTO:
+
+  private void btn_pesquisar_Click(object sender, EventArgs e)
+        {
+            lbl_info.Text = Produto.listarProduto(id: text_id.Text.ToString());
+        }
+       
+
+/// CÓDIGO LISTAR DA CLASSE FORNECEDOR:
+
+         private void btn_pesquisar_Click(object sender, EventArgs e)
+        {
+
+            lbl_info.Text = Fornecedor.listarFornedor(id: text_id.Text.ToString());
+
+        }

@@ -1,0 +1,12 @@
+D:\Banco de Dados\projeto01\IntroducaoApp\bin\Debug\IntroducaoApp.exe.config
+D:\Banco de Dados\projeto01\IntroducaoApp\bin\Debug\IntroducaoApp.exe
+D:\Banco de Dados\projeto01\IntroducaoApp\bin\Debug\IntroducaoApp.pdb
+D:\Banco de Dados\projeto01\IntroducaoApp\obj\Debug\IntroducaoApp.csproj.AssemblyReference.cache
+D:\Banco de Dados\projeto01\IntroducaoApp\obj\Debug\IntroducaoApp.csproj.SuggestedBindingRedirects.cache
+D:\Banco de Dados\projeto01\IntroducaoApp\obj\Debug\IntroducaoApp.FrnPrincipal.resources
+D:\Banco de Dados\projeto01\IntroducaoApp\obj\Debug\IntroducaoApp.Properties.Resources.resources
+D:\Banco de Dados\projeto01\IntroducaoApp\obj\Debug\IntroducaoApp.csproj.GenerateResource.cache
+D:\Banco de Dados\projeto01\IntroducaoApp\obj\Debug\IntroducaoApp.csproj.CoreCompileInputs.cache
+D:\Banco de Dados\projeto01\IntroducaoApp\obj\Debug\IntroducaoApp.exe
+D:\Banco de Dados\projeto01\IntroducaoApp\obj\Debug\IntroducaoApp.pdb
+D:\Banco de Dados\projeto01\IntroducaoApp\obj\Debug\IntroducaoApp.FrmCalculo.resources

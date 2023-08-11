@@ -1,0 +1,49 @@
+using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace atividadeBD.Class
+{
+    internal class Cliente
+    {
+
+        private int id;
+        private string nome;
+        private string email;
+        private int idade;
+
+        public int Id { get => id; set => id = value; }
+        public string Nome { get => nome; set => nome = value; }
+        public string Email { get => email; set => email = value; }
+        public int Idade { get => idade; set => idade = value; }
+
+
+        public static void salvar(Cliente c)
+        {
+
+            try
+            {
+
+                MySqlConnection conn = Conexao.obterConexao();
+                string sql = "INSERT INTO cliente VALUES (null, @nome, @email, @idade)";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@nome", c.nome);
+                cmd.Parameters.AddWithValue("@email", c.email);
+                cmd.Parameters.AddWithValue("@idade", c.idade);
+                cmd.ExecuteNonQuery();
+
+            }
+            catch (MySqlException e)
+            {
+
+                throw e;
+
+            }
+
+        }
+
+    }
+}

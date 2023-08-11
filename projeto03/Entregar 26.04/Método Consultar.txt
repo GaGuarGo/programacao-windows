@@ -1,0 +1,36 @@
+ public static Boolean pesquisar(Cliente c)
+        {
+
+            MySqlConnection conn = Conexao.obterConexao();
+            string sql = "SELECT * FROM cliente WHERE id = @id";
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@id", c.id);
+            MySqlDataReader res = cmd.ExecuteReader();
+
+
+            Boolean verificar = false;
+
+            if (res.HasRows)
+            {
+                if (res.Read())
+                {
+                   
+                    c.Id = Convert.ToInt32(res["id"].ToString());
+                    c.Nome = res["nome"].ToString();
+                    c.Email= res["email"].ToString();
+                    c.Idade = Convert.ToInt32(res["idade"].ToString());
+
+
+                    verificar = true;   
+                }
+
+            }
+            else
+            {
+
+                
+                verificar= false;
+
+            }
+            return verificar;
+        }

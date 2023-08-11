@@ -1,0 +1,23 @@
+D:\Banco de Dados\projeto01\AppTarefa\bin\Debug\AppTarefa.exe.config
+D:\Banco de Dados\projeto01\AppTarefa\bin\Debug\AppTarefa.exe
+D:\Banco de Dados\projeto01\AppTarefa\bin\Debug\AppTarefa.pdb
+D:\Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.csproj.AssemblyReference.cache
+D:\Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.csproj.SuggestedBindingRedirects.cache
+D:\Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.FrmPrincipal.resources
+D:\Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.Properties.Resources.resources
+D:\Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.csproj.GenerateResource.cache
+D:\Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.csproj.CoreCompileInputs.cache
+D:\Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.exe
+D:\Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.pdb
+D:\Programação Banco de Dados\projeto01\AppTarefa\bin\Debug\AppTarefa.exe.config
+D:\Programação Banco de Dados\projeto01\AppTarefa\bin\Debug\AppTarefa.exe
+D:\Programação Banco de Dados\projeto01\AppTarefa\bin\Debug\AppTarefa.pdb
+D:\Programação Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.csproj.AssemblyReference.cache
+D:\Programação Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.csproj.SuggestedBindingRedirects.cache
+D:\Programação Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.FrmPrincipal.resources
+D:\Programação Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.Properties.Resources.resources
+D:\Programação Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.csproj.GenerateResource.cache
+D:\Programação Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.csproj.CoreCompileInputs.cache
+D:\Programação Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.exe
+D:\Programação Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.pdb
+D:\Programação Banco de Dados\projeto01\AppTarefa\obj\Debug\AppTarefa.FrmCalculo.resources

@@ -1,0 +1,51 @@
+//Função Excluir na classe - Cliente
+
+ public string excluir(string id)
+        {
+            try
+            {
+                MySqlConnection conn = Conexao.obterConexao();
+                string sql = "DELETE FROM cliente WHERE id = @id";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.ExecuteNonQuery();
+                return "excluído";
+            }
+            catch (Exception e)
+            {
+                return "erro: " + e.Message;
+            }
+        }
+
+-------------------------------------------------------------------------------------------------------------------
+
+//Função Excluir no FrmListarCliente
+
+private void btn_excluir_Click(object sender, EventArgs e)
+        {
+            string message = "Deseja realmente excluir o registro?";
+            string caption = "Exclusão de registro";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, caption, buttons);
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+                Cliente cli = new Cliente();
+                MessageBox.Show(cli.excluir(text_id.Text));
+                limpar();
+            }
+            else
+            {
+                MessageBox.Show("Cancelado");
+            }
+            limpar();
+
+        }
+
+        private void limpar()
+        {
+            text_id.Clear();
+            lbl_descricao.Text = "";
+            text_id.Focus();
+            btn_excluir.Enabled = false;
+        }
+          
